@@ -11,9 +11,5 @@ new \blrw\App();
 
 debug(\blrw\Router::getRoutes());
 
-echo "Hello World";
-echo "Goodbye";
-
-
 
 

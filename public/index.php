@@ -10,6 +10,7 @@ require_once CONFIG . '/routes.php';
 new \blrw\App();
 
 debug(\blrw\Router::getRoutes());
+echo "Hell wrld";
 
 
 

@@ -2,11 +2,13 @@
 
 namespace app\controllers;
 
-class MainController
+use blrw\Controller;
+
+class MainController extends Controller
 {
     public function indexAction()
     {
-        echo "Hello";
+        var_dump($this->model);
     }
 
 

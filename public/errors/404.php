@@ -48,7 +48,7 @@
 <body>
 <div class="wrap">
     <div class="logo">
-        <img src="/errors/images/404.png" alt=""  />
+        <img src="/public/errors/images/404.png" alt=""  />
         <p><a href="<?=PATH;?>">Go back to Home</a></p>
     </div>
 </div>

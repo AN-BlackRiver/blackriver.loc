@@ -22,14 +22,26 @@ class Router
         return self::$route;
     }
 
+    protected static function removQueryString($url)
+    {
+        if ($url) {
+            $params = explode('&', $url, 2);
+            if (false === str_contains($params[0], '=')){
+                return rtrim($params[0], '/');
+            }
+        }
+        return '';
+    }
+
     public static function dispatch($url)
     {
+        $url = self::removQueryString($url);
         if (self::matchRoute($url)) {
             $controller = 'app\controllers\\' . self::$route['admin_prefix'] . self::$route['controller'] . 'Controller';
             if (class_exists($controller)) {
                 $controllerObject = new $controller(self::$route);
                 $action = self::lowerCamelCase(self::$route['action'] . 'Action');
-                if (method_exists($controllerObject, $action)){
+                if (method_exists($controllerObject, $action)) {
                     $controllerObject->$action();
                 } else {
                     throw new \Exception("Метод {$controller}::{$action} не найден", 404);

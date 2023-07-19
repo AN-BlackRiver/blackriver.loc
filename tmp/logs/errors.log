@@ -1,2 +1,10 @@
 [2023-07-13 20:14:02] Текс ошибки: Oshibka | Файл: C:\OSPanel\domains\blackriver.loc\public\index.php| Срока: 13
 ==============================================================
+[2023-07-19 08:39:25] Текс ошибки: Undefined array key "controller" | Файл: C:\OSPanel\domains\blackriver.loc\vendor\blrw\Router.php| Срока: 52
+==============================================================
+[2023-07-19 08:40:41] Текс ошибки: Undefined array key "controller" | Файл: C:\OSPanel\domains\blackriver.loc\vendor\blrw\Router.php| Срока: 52
+==============================================================
+[2023-07-19 08:40:42] Текс ошибки: Undefined array key "controller" | Файл: C:\OSPanel\domains\blackriver.loc\vendor\blrw\Router.php| Срока: 52
+==============================================================
+[2023-07-19 08:40:55] Текс ошибки: Undefined array key "controller" | Файл: C:\OSPanel\domains\blackriver.loc\vendor\blrw\Router.php| Срока: 52
+==============================================================
